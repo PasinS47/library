@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Library</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <dialog id="bookForm" closedby="none">
+        <form method="dialog">
+            <div>
+                <label for="book-name">Book Name: </label>
+                <input type="text" id="book-name" name="book-name">
+            </div>
+            <div>
+                <label for="author">Book Author: </label>
+                <input type="text" id="author" name="author">
+            </div>
+            <div>
+                <label for="page-cnt">Page Count: </label>
+                <input type="number" id="page-cnt" name="page-cnt">
+            </div>
+            <div>
+                <label for="status">Book Status: </label>
+                <select id="status" name="status">
+                    <option>On-hold</option>
+                    <option>Read</option>
+                    <option>Not Read</option>
+                </select>
+            </div>
+            <div>
+                <label for="description">Description: </label>
+                <textarea id="description" name="description" maxlength="100"></textarea>
+            </div>
+            <button type="reset">Reset</button>
+            <button id="submitBtn" type="submit">Confirm</button>
+        </form>
+    </dialog>
+    <button id="addBook">New Book</button>
+    <div class="container">
+        <div>
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
